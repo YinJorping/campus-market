@@ -1,0 +1,17 @@
+# Build
+hm-dianping/target/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
