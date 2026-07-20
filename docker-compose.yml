@@ -10,7 +10,7 @@ services:
       - "3306:3306"
     volumes:
       - mysql-data:/var/lib/mysql
-      - ./hm-dianping/src/main/resources/db:/docker-entrypoint-initdb.d
+      - ./campus-market/src/main/resources/db:/docker-entrypoint-initdb.d
     command:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
@@ -40,7 +40,7 @@ services:
 
   app:
     build:
-      context: ./hm-dianping
+      context: ./campus-market
       dockerfile: Dockerfile
     container_name: campus-app
     restart: unless-stopped

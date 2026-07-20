@@ -461,7 +461,7 @@ Controller
 
 ```bash
 # 1. 克隆项目
-git clone <repo-url> && cd heimadianping/hm-dianping
+git clone <repo-url> && cd heimadianping/campus-market
 
 # 2. 导入数据库
 mysql -u root -p < src/main/resources/db/legacy_data.sql
@@ -507,7 +507,7 @@ curl http://localhost:8081/api/items \
 cd heimadianping
 
 # 2. 编译项目 (生成 JAR)
-cd hm-dianping && mvn package -DskipTests && cd ..
+cd campus-market && mvn package -DskipTests && cd ..
 
 # 3. (可选) 修改环境变量
 cp .env.example .env
@@ -576,7 +576,7 @@ docker compose up -d --build app
 | `mysql-data` | MySQL 数据文件 | `docker compose down -v` |
 | `redis-data` | Redis AOF 快照 | `docker compose down -v` |
 
-数据库初始化 SQL 位于 `hm-dianping/src/main/resources/db/`，初次启动时自动执行，后续重启不会重复执行。
+数据库初始化 SQL 位于 `campus-market/src/main/resources/db/`，初次启动时自动执行，后续重启不会重复执行。
 
 ---
 
@@ -691,7 +691,7 @@ heimadianping/
 │   ├── Project-Final-Review-v1.md         ← 最终架构评审
 │   ├── Backend-Acceptance-Test-Plan.md    ← 验收测试计划
 │   └── screenshots/                       ← 截图目录
-└── hm-dianping/
+└── campus-market/
     ├── pom.xml
     ├── src/main/resources/
     │   ├── application.yaml
